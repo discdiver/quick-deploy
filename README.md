@@ -1,1 +1,1 @@
-## Demo repo for interactive Prefect deployment demo
+## Repo for interactive Prefect deployment demo
