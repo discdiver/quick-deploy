@@ -14,7 +14,10 @@ def fetch_weather(lat: float = 38.9, lon: float = -77.0):
 
 
 if __name__ == "__main__":
-    fetch_weather.from_source(entrypoint="get_weather_gcp.py:fetch_weather").deploy(
+    fetch_weather.from_source(
+        source="https://github.com/discdiver/quick-deploy.git",
+        entrypoint="get_weather_gcp.py:fetch_weather",
+    ).deploy(
         name="test-infra-setup",
         work_pool_name="my-gcp-pool-from-cli",
     )
